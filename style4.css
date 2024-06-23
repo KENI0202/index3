@@ -1,0 +1,41 @@
+.container {
+    max-width: 100%; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px;
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+img {
+    max-width: 100%; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener las proporciones */
+    display: block; /* Evitar espacios debajo de la imagen */
+}
+@media only screen and (max-width: 768px) {
+.container, .menu {
+    width: 90%;
+}
+header {
+    text-align: center;
+}
+header h1 {
+    float: none;
+}
+nav ul {
+    text-align: center;
+    margin-top: 10px;
+}
+nav ul li {
+    display: block;
+    margin: 10px 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+nav ul li {
+    margin: 5px 0;
+    }
+}

@@ -1,0 +1,131 @@
+/* KENIA YARETSY CARRILLO SORIA */
+*{
+	margin: 0;
+	padding: 0;
+}
+header, footer {
+	background: #f4ddd5;
+	border-radius:0.5em;
+	margin: 0.5em auto;
+	max-width: 1000px; 
+	padding: 0.25em;
+	color: rgb(7, 7, 7);
+	text-align: left;
+}
+section#principal, aside {
+	background:  #f4ddd5;
+	border-radius:0.5em;
+	display: inline-block; 
+	margin: 0.25em auto;
+	max-width: 1000px; 
+	min-height: 200px; 
+	padding: 0.25em;
+	text-align: left;
+	vertical-align: top; 
+	width:55%;
+}
+aside{
+	width: 40%;
+}
+div#general{
+    margin: auto;
+    margin-top: 20px;
+    width: 400px;
+    height: auto;
+    background-color: #bce5c7;
+}
+nav{
+    max-width: 100px;
+    margin: left;
+    background-color: #bce5c7;
+    font-size: 19px;
+    margin-top: 00px;
+}
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal >li> a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color:#bce5c7;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 500px;
+    background-color: rgba(246, 243, 244, 0.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color:#ffffff;
+}
+.menu-vertical li a{
+    display:block;
+    color: rgba(11, 11, 11, 0.829);
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+}
+.slider-wrapper{
+ position: relative;
+ max-width: 950px;
+ margin: 50px 0 auto;
+ 
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 1000px;
+    margin: 50px 0 auto;
+}
+.slider-wrapper ul{
+   display: flex;
+   padding: 0;
+   width: 400%;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position:absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a :hover{
+    opacity: 1;
+}
+@font-face {
+    font-family: fuente1;
+    src: url(../FONTS/Lato/Lato-Light.ttf);
+}
+body{
+    font-family: fuente1;
+}
